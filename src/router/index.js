@@ -6,8 +6,8 @@ import Broadcast from '@/components/pages/Broadcast/Broadcast'
 import Group from '@/components/pages/Group/Group'
 import Mine from '@/components/pages/Mine/Mine'
 import Notfound from '@/components/pages/Notfound/Notfound'
-
-
+import List from "@/components/pages/Mine/List"
+import HomeCity from "@/components/pages/Home/City"
 Vue.use(Router)
 
 export default new Router({
@@ -40,12 +40,18 @@ export default new Router({
     {
       path: '/Mine',
       name: 'Mine',
-      component: Mine
+      component: Mine,
+      
     },
     {
-      path: '/Notfound',
+      path: '*',
       name: 'Notfound',
       component: Notfound
     },
+    {
+      path:'/Home/City',
+      name:'HomeCity',
+      component: HomeCity
+    }
   ]
 })

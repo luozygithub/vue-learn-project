@@ -1,4 +1,17 @@
-@mixin  border-radius {
-    border-radius: 5px;
-    box-shadow:5px 5px 10px #ccc;
+.pt50{
+    padding-top:50px;
+}
+
+.pt60{
+    padding-top:60px;
+}
+.loading-img{
+    background: url(../assets/loading-img.gif) no-repeat center;
+    height: 1.4rem;
+    width: 100%;
+    position: absolute;
+    top:0.5rem;
+}
+.mt60{
+    margin-top: 60px;
 }

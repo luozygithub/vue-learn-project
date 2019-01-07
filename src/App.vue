@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <ul>
-      <router-link tag='li' v-for="router in routers" :key="router.id" :to="{name:router.name}">{{router.title}}</router-link>
-    </ul>
+    <!-- <app-header></app-header> -->
     <tabBar></tabBar>
     <router-view/>
   </div>
@@ -10,63 +8,20 @@
 
 <script>
 import tabBar from "./components/commens/Tabbar"
+import appHeader from "./components/commens/Header"
 export default {
   name: 'App',
   components:{
-    tabBar
+    tabBar,
+    appHeader
   },
-  data(){
-    return {
-      routers:[
-        {
-          id:1,
-          path:'/Home',
-          title: 'Home',
-          name:'Home'
-
-        },
-        {
-          id:2,
-          path:'/Audio',
-          title: 'Audio',
-          name:'Audio'
-
-        },
-        {
-          id:3,
-          path:'/Mine',
-          title: 'Mine',
-          name:'Mine'
-
-        },
-        {
-          id:4,
-          path:'/Broadcast',
-          title: 'Broadcast',
-          name:'Broadcast'
-
-        },
-        {
-          id:5,
-          path:'/Group',
-          title: 'Group',
-          name:'Group'
-
-        },
-        {
-          id:6,
-          path:'/Notfound',
-          title: 'Notfound',
-          name:'Notfound'
-
-        },
-
-      ]
-    }
-  }
+  methods: {
+    // this.$emit();
+  },
+  
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
   ul{
     width: 100%;
     li{
