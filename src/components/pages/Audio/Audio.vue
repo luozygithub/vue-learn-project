@@ -1,6 +1,5 @@
 <template>
     <div class="audio">
-       Audio
     </div>
 </template>
 <script>

@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import rt from './router/index'//可省略index.js
 import axios from "axios";
-import { Lazyload, InfiniteScroll, Button,Header,Loadmore, IndexList, IndexSection, Cell } from 'mint-ui';
+import { Lazyload, InfiniteScroll, Button,Header,Loadmore, IndexList, IndexSection, Cell ,Navbar, TabItem } from 'mint-ui';
 import "animate.css"
 //自定义插件 模块
 //引入redirective
@@ -16,6 +16,7 @@ Vue.config.productionTip = false
 Vue.use(Lazyload);
 Vue.use(InfiniteScroll);
 
+
 Vue.prototype.$http = axios;
 /* eslint-disable no-new */
 //mint ui 注册
@@ -25,6 +26,8 @@ Vue.component(Loadmore.name, Loadmore);
 Vue.component(IndexList.name, IndexList);
 Vue.component(IndexSection.name, IndexSection);
 Vue.component(Cell.name, Cell);
+Vue.component(Navbar.name, Navbar);
+Vue.component(TabItem.name, TabItem);
 new Vue({
   el: '#app',
   router:rt,

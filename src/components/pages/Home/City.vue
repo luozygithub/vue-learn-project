@@ -1,5 +1,10 @@
 <template>
     <div class="home-city">
+        <mt-header title="请选择城市" >
+            <router-link to="/Home" slot="left">
+                返回
+            </router-link>
+        </mt-header>   
         <mt-index-list style="z-index:20">
             <mt-index-section index="热门">
                 <mt-cell title="北京"></mt-cell>

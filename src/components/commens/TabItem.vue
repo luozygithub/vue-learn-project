@@ -54,18 +54,25 @@ export default {
         display: flex;
         flex-direction: column;
         width: 40px;
+        .normalImg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         span{
             img{
-                width: 100%;
+                width: 70%;
+                padding-left: 20%;
+                padding-top:0.05rem;
             }
         }
-        height: 50px;
+        height: 0.4rem;
         
         text-align: center;
         
 
     }
     .activeTitle{
-        color:green;
+        color:#ff4d64;
     }
 </style>

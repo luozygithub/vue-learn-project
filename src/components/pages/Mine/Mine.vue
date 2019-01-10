@@ -1,24 +1,24 @@
 <template>
-    <div class="home pt50">
+     <div class="home pt50">
+        <!--
         Mine
         <p>num:{{this.$store.state.num}}</p>
         <p>_num:{{_num}}</p>
         <p> doubleNum:{{this.$store.getters.doubleNum}} doublueNum2:{{doubleNum}}</p>
         <p>CHANGE_NUM: <mt-button @click="CHANGE_NUM" type="primary">add</mt-button></p>
-        <!-- <mt-button @click=""></mt-button> -->
+         <mt-button @click=""></mt-button> 
         <car/>
         <list/>
         <router-view></router-view>
-    </div>
+        -->
+    </div> 
 </template>
 <script>
-import Car from "./Car.vue";
-import List from "./List.vue";
 import {mapState, mapGetters,mapMutations} from "vuex";
 import {CHANGE_NUM} from "../../../store/const"
 export default {
     components:{
-        Car,List
+    
     },
     computed:{
         ...mapState({

@@ -46,6 +46,7 @@ export default {
                         pagination: {
                             el: '.swiper-pagination',
                         },
+                        autoplay:true,
                     })       
                 })
             })
