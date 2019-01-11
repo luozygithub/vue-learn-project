@@ -29,9 +29,30 @@
     </div>
 </template>
 <script>
+import {mapState,mapActions,mapGetters} from "vuex"
 export default {
-    
+    methods:{
+        ...mapActions(["changeCity"]),
+    },
+    created() {
+        let that = this;
+        window.addEventListener("click", function(e){
+        // console.log("window 捕获", e.target.nodeName, e.currentTarget.nodeName,e.target.innerText);
+            if(e.target.nodeName === 'DIV'){
+                // console.log(11)
+        
+                that.changeCity(e.target.innerText)
+                // console.log(that.$store.state)
+                this.location.reload()
+                that.$router.push("/home");
+
+            }
+        }, true);
+    },
+
 }
+
+
 </script>   
 <style lang="scss">
     .mint-indexlist-navitem{

@@ -8,23 +8,31 @@
       
     </mt-header> -->
     <header class="home-header-1">
-        <router-link to="/Home/City" >
+        <router-link to="/home/city" >
             <div class="left">
                 <img src="../../../assets/logo-icon.png" alt="">
-                <span class="home-city"> 城市</span>
+                <span class="home-city"> {{myCity}}</span>
                 <i class="fa fa-caret-down" aria-hidden="true"></i>
             </div>
         </router-link>
         <div class="right">
             <div class="is-hit">正在热映</div>
             <div class="coming-soon">即将上映</div>
+            <div></div>
         </div>
     </header>
   </div>
   
 </template>
 <script>
-export default {};
+import {mapState} from "vuex"
+export default {
+    computed:{
+        ...mapState({
+            myCity:state=>state.myCity.myCity
+        })
+    }
+};
 </script>
 <style lang="scss" scoped>
 .mint-header {

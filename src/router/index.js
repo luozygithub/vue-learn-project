@@ -13,24 +13,24 @@ export default new Router({
     {
       path: '/',
       name: '/',
-      redirect:'/Home'
+      redirect:'/home'
     },
     {
-      path: '/Home',
+      path: '/home',
       name: 'Home',
       component: Home,
-      children:[
-        {path:'MovieDetail',name:"MovieDetail",component:MovieDetail},
-        {path:'City',name:'City',component:HomeCity}
-      ]
+      // children:[
+      //   {path:'MovieDetail',component:MovieDetail,name:"MovieDetail"},
+      //   {path:'city',component:HomeCity,name:'City'}
+      // ]
     },
     {
-      path: '/Audio',
+      path: '/audio',
       name: 'Audio',
       component: Audio
     },
     {
-      path: '/Mine',
+      path: '/mine',
       name: 'Mine',
       component: Mine,
       

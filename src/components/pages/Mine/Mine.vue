@@ -14,26 +14,26 @@
     </div> 
 </template>
 <script>
-import {mapState, mapGetters,mapMutations} from "vuex";
-import {CHANGE_NUM} from "../../../store/const"
-export default {
-    components:{
-    
-    },
-    computed:{
-        ...mapState({
-            _num:(state)=>state.num
-        }),
-        ...mapGetters(["doubleNum"]),
+// import {mapState, mapGetters,mapMutations} from "vuex";
 
-    },
-    methods: {
-        ...mapMutations([CHANGE_NUM]),
-        clickRandom(){
-            this.$store.dispatch("getNumFromBackEnd");
-        }
-    },
-}
+// export default {
+//     components:{
+    
+//     },
+//     computed:{
+//         ...mapState({
+//             _num:(state)=>state.num
+//         }),
+//         ...mapGetters(["doubleNum"]),
+
+//     },
+//     methods: {
+//         ...mapMutations([CHANGE_NUM]),
+//         clickRandom(){
+//             this.$store.dispatch("getNumFromBackEnd");
+//         }
+//     },
+// }
 </script>
 <style lang="scss" scoped>
   

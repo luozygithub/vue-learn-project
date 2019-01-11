@@ -1,0 +1,4 @@
+let UPDATA_CITY = "UPDATA_CITY"
+export {
+    UPDATA_CITY
+}

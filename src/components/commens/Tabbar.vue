@@ -25,7 +25,7 @@ export default {
     components:{tabItem},
     data(){
         return {
-            selected:this.$route.name,
+            selected:this.$route.name.length > 0 ? this.$route.name:"Home",
 
         }
     },
