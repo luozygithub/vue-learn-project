@@ -11,7 +11,7 @@
         </tabItem>
 
     
-        <tabItem title="我的" mask="Mine" @setSelect="setSelect" :sel="selected">
+        <tabItem title="我的" mask="Login" @setSelect="setSelect" :sel="selected">
             <img slot='normalImg' src='../../assets/ic_tab_mine_normal1.png'/>
             <img slot='activeImg' src='../../assets/ic_tab_mine_normal1.png'/>
         </tabItem>

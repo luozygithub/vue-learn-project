@@ -6,7 +6,7 @@ import Mine from '@/components/pages/Mine/Mine'
 import Notfound from '@/components/pages/Notfound/Notfound'
 import HomeCity from "@/components/commens/City"
 import MovieDetail from "@/components/pages/MovieDetail/MovieDetail"
-// import Login from "@/components/commens/Login"
+import Login from "@/components/commens/Login"
 Vue.use(Router)
 
 export default new Router({
@@ -51,10 +51,10 @@ export default new Router({
       name:'MovieDetail',
       component: MovieDetail
     },
-    // {
-    //   path:'/login',
-    //   name:'Login',
-    //   component: Login
-    // }
+    {
+      path:'/login',
+      name:'Login',
+      component: Login
+    }
   ]
 })
