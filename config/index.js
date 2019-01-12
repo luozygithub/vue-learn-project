@@ -15,7 +15,8 @@ module.exports = {
       "/v2":{
         target:"https://api.douban.com",
         changeOrigin:true
-      }
+      },
+      
     },
 
     // Various Dev Server settings
