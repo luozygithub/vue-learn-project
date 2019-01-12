@@ -31,11 +31,16 @@
             <div class="zhuyan">主演：{{movie.casts.length>0?movie.casts[0].name:""}}</div>
         </div>
         <div class="right">
-            <mt-button class="mint-button mint-button--danger mint-button--small home-shop-btn">
-                购票
-            </mt-button>
+            <router-link 
+                :to="{name:'MovieDetail',params:{id:movie.id}}"
+            >
+                <mt-button class="mint-button mint-button--danger mint-button--small home-shop-btn">
+                    购票
+                </mt-button>
+            </router-link>
             <div class="act-tag">影城特惠</div>
         </div>
+       
     </div>
 </template>
 <script>

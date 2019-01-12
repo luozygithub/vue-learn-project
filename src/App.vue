@@ -1,18 +1,18 @@
 <template>
   <div id="app">
     <!-- <app-header></app-header> -->
-    <tabBar></tabBar>
+  
     <router-view/>
   </div>
 </template>
 
 <script>
-import tabBar from "./components/commens/Tabbar"
+
 import appHeader from "./components/commens/Header"
 export default {
   name: 'App',
   components:{
-    tabBar,
+    
     appHeader
   },
   methods: {

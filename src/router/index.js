@@ -4,8 +4,9 @@ import Home from '@/components/pages/Home/Home'
 import Audio from '@/components/pages/Audio/Audio'
 import Mine from '@/components/pages/Mine/Mine'
 import Notfound from '@/components/pages/Notfound/Notfound'
-import HomeCity from "@/components/pages/Home/City"
-import MovieDetail from "@/components/pages/Home/MovieDetail"
+import HomeCity from "@/components/commens/City"
+import MovieDetail from "@/components/pages/MovieDetail/MovieDetail"
+// import Login from "@/components/commens/Login"
 Vue.use(Router)
 
 export default new Router({
@@ -44,6 +45,16 @@ export default new Router({
       path:'/Home/City',
       name:'HomeCity',
       component: HomeCity
-    }
+    },
+    {
+      path:'/moviedetail',
+      name:'MovieDetail',
+      component: MovieDetail
+    },
+    // {
+    //   path:'/login',
+    //   name:'Login',
+    //   component: Login
+    // }
   ]
 })

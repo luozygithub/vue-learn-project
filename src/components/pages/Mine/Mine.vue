@@ -11,9 +11,16 @@
         <list/>
         <router-view></router-view>
         -->
+         <tabBar></tabBar>
     </div> 
 </template>
 <script>
+import tabBar from "../../commens/Tabbar";
+export default {
+    components:{
+        tabBar,
+    }
+}
 // import {mapState, mapGetters,mapMutations} from "vuex";
 
 // export default {

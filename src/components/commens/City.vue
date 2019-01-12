@@ -37,9 +37,9 @@ export default {
     created() {
         let that = this;
         window.addEventListener("click", function(e){
-        // console.log("window 捕获", e.target.nodeName, e.currentTarget.nodeName,e.target.innerText);
-            if(e.target.nodeName === 'DIV'){
-                // console.log(11)
+        console.log("window 捕获", e.target.className, e.currentTarget.nodeName,e.target.innerText);
+            if(e.target.className==='mint-cell-title' || e.target.className ==='mint-cell-wrapper'){
+                console.log(11)
         
                 that.changeCity(e.target.innerText)
                 // console.log(that.$store.state)
